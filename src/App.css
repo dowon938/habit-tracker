@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* ------- */
+.navbar {
+  background-color: wheat;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem;
+  height: 6rem;
+}
+.navbar-icon {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.addBar {
+  margin: 20px;
+}
+.addBar-input {
+  width: 300px;
+  height: 2rem;
+}
+.addBar-btn {
+  height: 2rem;
+  padding: 10px;
+  background-color: goldenrod;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.habit {
+  font-size: 2rem;
+  padding: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-status,
+.habit-count {
+  display: inline-block;
+  background-color: darkseagreen;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
+  color: white;
+  /* transform: translateY(-0.3rem); */
+}
+
+.habit-button {
+  font-size: 2rem;
+  margin: 0 0.2em;
+  background-color: transparent;
+}
+
+.habit-button:hover {
+  opacity: 0.8;
+}
+.habit-increase,
+.habit-decrease {
+  color: goldenrod;
+}
+.habit-delete {
+  color: darkred;
+}
+.reset {
+  height: 2rem;
+  background-color: darkolivegreen;
+  padding: 10px;
+  margin-left: 1rem;
+  color: white;
 }
